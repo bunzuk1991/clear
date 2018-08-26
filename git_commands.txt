@@ -1,0 +1,39 @@
+**************************
+git init /* ініціалізація проекта
+git config --global user.name "NAME"
+git config --global user.email "EMAIL"
+git status /* статус
+
+**************************************************************************
+1. git add FileName /* додає файл для відслідкування
+or
+1. git add --all    /* додає все із корневого каталога для відслідкування
+**************************************************************************
+
+**************************************************************************
+2. create file .gitignore /* перелік шляхів або файлів для виключення із слідкування
+.gitignore:
+	.idea/* - не відслідковується каталог idea та усі його підкаталоги та файли
+	*.js - не відслідковуються файли із розширенням js
+
+
+3. git commit -m "note for this commit (initial commit of the project)"
+
+3.1 git tag "version_1.0" -версія
+3.2 git branch /* list of branches
+3.3 git branch NAME_OF_BRANCH /* create new branch
+3.4 git checkout NAME_OF_BRANCH /*change branch
+
+4. Create a new remote repository
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin GIT_URL
+	git push -u NAME_OF_REMOTE_PROJECT master (ветка master - по замовчувані, може бути будь-яка)
+
+4. push on existing rep
+	git remote add origin GIT_URL
+	git push -u NAME_OF_REMOTE_PROJECT master (ветка master - по замовчувані, може бути будь-яка)
+
+
+
